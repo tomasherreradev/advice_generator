@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'MiFuente';
+    src: url('/fonts/Manrope-VariableFont_wght.ttf') format('woff2'),
+         url('/fonts/Manrope-ExtraBold.ttf') format('woff');
+  }
+
+/* purgecss start ignore */
+
+  .bar {
+    margin-top: 1rem;
+    width: 100%;
+    height: 1rem;
+    background-position: center center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .bar {
+      background-image: url(/images/pattern-divider-desktop.svg);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .bar {
+      background-image: url(/images/pattern-divider-mobile.svg);
+    }
+  }
+
+  .after {
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-top: -1.3rem;
+    background-image: url(/images/icon-dice.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1.2rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background-color: hsl(150, 100%, 66%);
+  }
+
+  .after:hover {
+    cursor: pointer;
+    -webkit-box-shadow: -2px 0px 101px -1px rgba(0,168,84,0.8);
+    -moz-box-shadow: -2px 0px 101px -1px rgba(0,168,84,0.8);
+    box-shadow: -2px 0px 101px -1px rgba(0,168,84,0.8);
+  }
+
+  .animacion {
+    transform: rotate(360deg); /* Realiza una rotación completa */
+    transition: transform 0.5s ease; /* Agrega una transición suave para la propiedad transform */
+  }
+
+  /* purgecss end ignore */
